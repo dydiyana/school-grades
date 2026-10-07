@@ -1,5 +1,5 @@
 // School grades service worker: the app opens without internet; data sync is done by the page.
-const CACHE = 'school-grades-2026.10.07-1210';
+const CACHE = 'school-grades-2026.10.07-1236';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
